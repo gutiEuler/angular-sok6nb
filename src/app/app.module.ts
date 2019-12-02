@@ -8,9 +8,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BodyComponent } from './components/body/body.component';
 import { TopicService } from './services/topic.service';
+import { HttpHeaders, HttpClientModule} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule, HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, BodyComponent ],
   bootstrap:    [ AppComponent ],
   providers: [TopicService]

@@ -15,7 +15,7 @@ export class BodyComponent implements OnInit {
 
   topics:Topic[]=null;
   ngOnInit() {
-   
+   this.topics = this.topicService.getTopics();
   }
 
 }
