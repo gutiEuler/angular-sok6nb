@@ -13,9 +13,12 @@ export class BodyComponent implements OnInit {
 
   constructor(private topicService:TopicService) { }
 
-  topics:Topic[]=null;
+  topics:Topic[];
+  
   ngOnInit() {
-   this.topics = this.topicService.getTopics();
+    this.topicService.getTopics().subscribe(response => {
+      this.topics=response as Topic[];
+    });
   }
 
 }
