@@ -1,2 +1,12 @@
-<h1>Body</h1
-<h1>{{topics[0].descripcion}}</h1>
+<div class="card-columns">
+  
+  <div class="card" *ngFor="let tema of topics">
+    
+    <div class="card-body" *ngIf="tema.id==search">
+      <h5 class="card-title">{{tema.id}}</h5>
+      <p class="card-text">{{tema.descripcion}}</p>
+    </div>
+  </div>
+  
+</div>
+<h1></h1>

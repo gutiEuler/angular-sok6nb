@@ -17,8 +17,8 @@ export class SearchService {
     this.search = search;
   }
 
-  getSearch():string{
-    return this.search;
+  getSearch():Observable<string>{
+    return of(this.search);
   }
 
 }

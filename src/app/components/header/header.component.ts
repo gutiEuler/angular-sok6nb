@@ -8,15 +8,19 @@ import {SearchService} from '../../services/search.service';
 })
 export class HeaderComponent implements OnInit {
 
-
+  search:string;
 
   constructor(private searchService:SearchService) { 
 
   }
 
-
-
   ngOnInit() {
   }
+
+  setSearch(){
+    this.searchService.setSearch(this.search);
+    console.log("Hola");
+  }
+  
 
 }
