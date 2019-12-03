@@ -17,6 +17,7 @@ export class BodyComponent implements OnInit {
 
   topics:Topic[];
   search:string;
+  selectedTopic:topic;
 
   ngOnInit() {
     this.topicService.getTopics().subscribe(response => {

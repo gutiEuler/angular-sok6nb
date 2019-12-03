@@ -1,0 +1,16 @@
+
+<h1> Questions of {{tema}}
+<div class="card-columns">
+  
+  <div class="card" *ngFor="let tema of topics" [(ngModel)]="topicSelected">
+    
+    <div class="card-body" 
+    *ngIf="tema.id==search || search==undefined">
+      <h5 class="card-title">{{tema.id}}</h5>
+      <p class="card-text">{{tema.descripcion}}</p>
+    </div>
+  </div>
+
+  <h1>{{topicSelected}}</h1>
+  
+</div>
