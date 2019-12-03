@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
 
   setSearch(){
     this.searchService.setSearch(this.search);
-    console.log("Hola");
   }
   
 
