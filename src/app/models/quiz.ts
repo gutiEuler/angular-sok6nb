@@ -15,17 +15,24 @@ class Question{
 
 export class Quiz{
 
-  quiz:Question[];
+  questions:Question[];
   maxPuntuation:number;
 
   private evaluateAnswer(question:number, answer:number[],evaluateMethod?:any):number{
+    
+    
 
     let ordinalOption:number= 0;
     for(let optionMarked of answer){
+      
+      if (this.questions[question].answers[ordinalOption].value != optionMarked){
+        return 0;
+      }
 
-
-
+      ordinalOption=ordinalOption+1;
     }
+
+    return 1;
 
 
   }
