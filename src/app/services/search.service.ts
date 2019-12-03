@@ -16,6 +16,7 @@ export class SearchService {
 
   setSearch(search:string){
     this.searchSubject.next(search);
+    
   }
 
   getSearch():Observable<string>{

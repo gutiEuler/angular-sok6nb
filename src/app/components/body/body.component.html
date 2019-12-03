@@ -2,7 +2,8 @@
   
   <div class="card" *ngFor="let tema of topics">
     
-    <div class="card-body" *ngIf="tema.id==search">
+    <div class="card-body" 
+    *ngIf="tema.id==search || search==undefined">
       <h5 class="card-title">{{tema.id}}</h5>
       <p class="card-text">{{tema.descripcion}}</p>
     </div>
