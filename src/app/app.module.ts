@@ -26,10 +26,11 @@ import { SearchService } from './services/search.service';
 
 //Rutas
 import {APP_ROUTES} from './app.routes';
+import { QuestionaryComponent } from './components/questionary/questionary.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpClientModule,APP_ROUTES ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, BodyComponent, AboutComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, BodyComponent, AboutComponent, QuestionaryComponent ],
   bootstrap:    [ AppComponent ],
   providers: [TopicService, SearchService ]
 })
