@@ -9,7 +9,6 @@ import { HttpClient, HttpHeaders} from '@angular/common/http';
 @Injectable()
 export class SearchService {
 
-  search:string;
 
   searchSubject:Subject<string> =new Subject<string>();
 
