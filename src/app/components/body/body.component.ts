@@ -17,7 +17,7 @@ export class BodyComponent implements OnInit {
 
   topics:Topic[];
   search:string;
-  selectedTopic:topic;
+  selectedTopic:Topic;
 
   ngOnInit() {
     this.topicService.getTopics().subscribe(response => {
@@ -28,11 +28,17 @@ export class BodyComponent implements OnInit {
     this.searchService.getSearch().subscribe(
       response => {
         this.search = response;
-        console.log("Search");
+        console.log("Search " + response);
       }
 
     )
 
   }
+
+  clicked(){
+
+    console.log("clicked");
+  }
+
 
 }

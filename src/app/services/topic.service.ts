@@ -15,17 +15,17 @@ export class TopicService {
      [
         {
             "id": 1,
-            "tema": "Uno",
+            "name": "Uno",
             "descripcion": "Tema 1"
-        }
-      ,{
+        },
+       {
             "id": 2,
-            "tema": "Dos",
+            "name": "Dos",
             "descripcion": "Tema 2"
-        }
-      ,{
+        },
+       {
             "id": 3,
-            "tema": "Tres",
+            "name": "Tres",
             "descripcion": "Tema 3"
         }
     ];
