@@ -2,8 +2,8 @@
   
   <div class="card" *ngFor="let tema of topics">
     
-    <div class="card-body" [ngModel]="selectedTopic" (click)="clicked()"
-    *ngIf="tema.id==search || search==undefined">
+    <div class="card-body" [ngModel]="selectedTopic" (click)="clicked()" ngDefaultControl
+    *ngIf="tema.id==search || !search">
       <h5 class="card-title">{{tema.id}}</h5>
       <p class="card-text">{{tema.descripcion}}</p>
     </div>

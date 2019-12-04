@@ -15,6 +15,7 @@ class Question{
 
 export class Quiz{
 
+  
   questions:Question[];
   maxPuntuation:number;
 

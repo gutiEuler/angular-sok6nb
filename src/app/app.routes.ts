@@ -4,7 +4,7 @@ import { QuestionaryComponent } from './components/questionary/questionary.compo
 
 const ROUTES: Routes = [
   {path: 'about', component: AboutComponent },
-  {path: 'queestionary', component: QuestionaryComponent}
+  {path: 'questionary', component: QuestionaryComponent}
 ];
 
 export const APP_ROUTES: any = RouterModule.forRoot(ROUTES, { useHash: true });
